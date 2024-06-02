@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практика 6 модуль.</title>
+    <link rel="stylesheet" href="./common.css" />
+  </head>
+
+  <body>
+    <p><a href="../index.html">Go back</a></p>
+    <h1>Практика. Репета</h1>
+    <h2>1. Створення елементів та додавання їх у розмітку</h2>
+
+    <!--<button type="button" class="color-btn js-color-btn">Дадати кольори</button>-->
+
+    <!--color-picker (додаємо сюди нові кнопки-кольори)-->
+    <div class="color-picker js-color-picker"></div>
+
+    <h2>2. Створення колекції товарів</h2>
+    <div class="js-product"></div>
+
+    <h2>3. Історія транзакцій (створюємо tbody)</h2>
+
+    <table class="transaction-table js-transaction-table">
+      <thead>
+        <tr class="transaction-table__row">
+          <th class="transaction-table__column">ID транзакція</th>
+          <th>Сума</th>
+          <th>Дата</th>
+          <th>Хто</th>
+          <th>Тип транзакції</th>
+          <th>Ім'я рахунку</th>
+          <th>Номер рахунку</th>
+        </tr>
+      </thead>
+    </table>
+
+    <h2>4. Підписка і відписка по одному колбеку</h2>
+    <button type="button" class="js-target-btn">Цільова кнопка</button>
+    <button type="button" class="js-add-listener">Додати слухача</button>
+    <button type="button" class="js-remove-listener">Зняти слухача</button>
+
+    <h2>5. Форма:</h2>
+    <ol>
+      <li>збір значень форми;</li>
+      <li>заміняти анонім на те що буде введено в інпут;</li>
+      <li>робити кнопку активною при прийняті ліценз.згоди;</li>
+    </ol>
+
+    <form class="js-register-form" autocomplete="off">
+      <div role="group">
+        <label
+          >Ім'я
+          <input type="text" class="js-input" />
+        </label>
+        <label
+          >Пошта
+          <input type="email" name="email" />
+        </label>
+        <label
+          >Пароль
+          <input name="password" type="password" />
+        </label>
+      </div>
+
+      <br />
+      <div role="group">
+        <b>Тип підписки:</b>
+        <label>
+          <input type="radio" name="subscription" value="free" />
+          Free
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="basic" />
+          Basic
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="pro" />
+          Pro
+        </label>
+      </div>
+
+      <p>
+        <label>
+          <input type="checkbox" class="js-license" />
+          Приймаю ліцензійну згоду
+        </label>
+      </p>
+
+      <br />
+      <button type="submit" disabled class="js-button">
+        Зареєструватися як <span class="js-button__span">Анонім</span>
+      </button>
+    </form>
+
+    <h2>6. Події клавіатури</h2>
+
+    <button class="js-button__clear">Очистити</button>
+    <p class="js-output output"></p>
+
+    <h2>7. Модальне вікно</h2>
+    <button type="button" data-action="open-modal">Відкрити модалку</button>
+
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <h2>Modal window</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia quas ab quia!
+          Libero illo odio exercitationem animi architecto. Aliquid modi dicta animi optio quasi.
+          Perferendis voluptatum dicta esse laborum!
+        </p>
+        <button type="button" class="button" data-action="close-modal">Закрити</button>
+      </div>
+    </div>
+
+    <script src="./04-practice-06.1.js" type="module"></script>
+  </body>
+</html>

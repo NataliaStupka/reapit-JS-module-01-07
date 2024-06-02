@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практика 6 модуль</title>
+    <link rel="stylesheet" href="./general-rusich.css" />
+  </head>
+
+  <body>
+    <p><a href="../index.html">Go back</a></p>
+    <h1>Практика. Рисіч</h1>
+
+    <h2>
+      1. Створення html розмітки (insertAdjacentHTML). Видалення елементів (.innerHTML, .remove()) (в js закоментовано).
+    </h2>
+    <ul class="js-container_cars"></ul>
+
+    <h2>2. Переміщення елемента по кліку. Ховаємо елемент по Esc</h2>
+    <button type="button" class="js-click">Click</button>
+    <div class="js-container_square container-square"></div>
+
+    <h2>3. Скриття/розкриття частини тексту під '...'</h2>
+    <p class="js-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ducimus error, animi dicta eum consequuntur rem, blanditiis unde cumque, beatae quis odio eligendi ipsam et tempora dolor! Deleniti, atque reprehenderit!</p>
+    </p>
+
+    <h2>4. Form (збирання даних і формування для відправки на бекенд)</h2>
+    <form action="submit" class="js-form">
+      <input type="text" name="userName">
+      <input type="email" name="userEmail">
+      <input type="number" name="userAge">
+      <button>Submit</button>
+    </form>
+
+    <h2>5. Створення html розмітки, пошук автомобіля, перемальовка html із знайденими авто.</h2>
+   <div>
+    <h2>Обрані авто</h2>
+    <ul class="js-favorite-list"></ul>
+  </div>
+   
+    <form action="submit" class="js-search-form">
+      <input type="text" name="query">
+      <select name="select" >     <!--за чим шукаємо (за моделлю чи маркою)-->
+        <option value="model">Марка</option>
+        <option value="type">Модель</option>
+      </select>
+      <button>Пошук</button>
+    </form>
+
+    <ul class="js-list">
+    </ul>
+
+
+    <script src="./04-practice-06.2.js" type="module"></script>
+  </body>
+</html>
