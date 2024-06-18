@@ -25,7 +25,7 @@ const colorPickerContainerElement = document.querySelector('.js-color-picker'); 
 //   return buttonEl;
 // });
 
-//функція приймає масив обьектів, перебирає і повертає новий масив елементів(ryjgjr)
+//функція приймає масив обьектів, перебирає і повертає новий масив елементів(кнопок)
 const makeColorPickerOptions = options => {
   return options.map(option => {
     const buttonEl = document.createElement('button'); //створюємо кнопку

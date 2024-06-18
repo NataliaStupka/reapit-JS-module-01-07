@@ -20,7 +20,8 @@ tagsContainer.addEventListener('click', onTagsContainerClick);
 //   //якщо вже є такий класс то знімаємо його. Робимо перевірку, томущо якщо там null, то скрипт впаде
 //   if (currentActiveBtn) {
 //     currentActiveBtn.classList.remove('tags__btn--active');
-//   } // if який має доступ до властивості, можна замінити таким записом (необов'язкова властивість): currentActiveBtn?.classList.remove('tags__btn--active');
+//   } // if який має доступ до властивості, можна замінити таким записом
+// (необов'язкова властивість): currentActiveBtn?.classList.remove('tags__btn--active');
 
 //   //при 'click' додаємо класс 'active'
 //   event.target.classList.add('tags__btn--active');
